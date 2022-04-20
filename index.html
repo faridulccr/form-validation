@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Welcome to Dragon travel desk</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Dragon travel desk</h1>
+
+        <form action="#">
+            <div class="form-group mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+                <small id="nameValid" class="form-text invalid-feec">
+                    Your username must be 2-20 characters long and should not start with a number.
+                </small>
+            </div>
+
+            <div class="form-group mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="text" class="form-control" id="email" name="email" placeholder="xxxxx@gmail.com">
+                <small id="emailValid" class="form-text invalid-feec">
+                    Your email must be a valid email.
+                </small>
+            </div>
+
+            <div class="form-group mb-3">
+                <label for="car" class="form-label">Select your car</label>
+                <select class="form-control" id="car" name="car">
+                    <option value="">Omni</option>
+                    <option value="">Maruti 800</option>
+                    <option value="">Ford Titanium</option>
+                    <option value="">Audi A4</option>
+                    <option value="">Hi Ace</option>
+                </select>
+            </div>
+
+            <div class="form-group mb-3">
+                <label for="address" class="form-label">Your address</label>
+                <textarea class="form-control" id="address" name="address" rows="3"></textarea>
+            </div>
+
+            <div class="form-group mb-3">
+                <label for="phone" class="form-label">Enter your phone number</label>
+                <input type="text" class="form-control" id="phone" name="phone">
+                <small id="phoneValid" class="form-text invalid-feec">
+                    Your phone number must be 10 digit long.
+                </small>
+            </div>
+
+            <div class="form-group mb-3">
+                <label for="messege" class="form-label">Any other messege...</label>
+                <textarea class="form-control" id="messege" name="messege" rows="3"></textarea>
+            </div>
+            <div>
+                <div>
+                    <div id="alertSuccess" class="alert alert-success alert-dismissible fade show" role="alert" style="display: none;">
+                        <p style="text-align: center;"><strong>Success!</strong> Your travel request has been succesfully submitted.</p>
+                    </div>
+                    <div id="alertDanger" class="alert alert-danger alert-dismissible fade show" role="alert" style="display: none;">
+                        <p style="text-align: center;"><strong>Sorry!</strong> You don't corectly fill out the form.</p>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary" id="submitBtn">Submit</button>
+        </form>
+        
+
+    </div>
+
+
+
+
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+        <script src="./script.js"></script>
+</body>
+
+</html>
